@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net7.0</TargetFramework>
+	  <TargetArchitecture>wasm</TargetArchitecture>
+	  <TargetOS>browser</TargetOS>
+	  <!--<RuntimeIdentifier>browser-wasm</RuntimeIdentifier>-->
+	  <UseMonoRuntime>true</UseMonoRuntime>
+	  <WasmMainJSPath>wwwroot/main.js</WasmMainJSPath>
+	  <OutputType>Exe</OutputType>
+	  <WasmEnableES6>true</WasmEnableES6>
+	  <PublishTrimmed>true</PublishTrimmed>
+	  <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	  <WasmAppDir>../output/wwwroot</WasmAppDir>
+	  <RunAOTCompilation>true</RunAOTCompilation>
+	  <!--RunAOTCompilationAfterBuild>true</RunAOTCompilationAfterBuild-->
+	  <EmccFlags>-sFULL_ES3</EmccFlags>
+  </PropertyGroup>
+
+</Project>
